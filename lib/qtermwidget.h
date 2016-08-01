@@ -204,6 +204,7 @@ public:
      * at the position in the terminal where keyboard input will appear.
      */
     void setKeyboardCursorShape(KeyboardCursorShape shape);
+    void setBoldIntense(bool value);
 
     QString title() const;
     QString icon() const;

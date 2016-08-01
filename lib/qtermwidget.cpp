@@ -655,6 +655,13 @@ void QTermWidget::setKeyboardCursorShape(KeyboardCursorShape shape)
     m_impl->m_terminalDisplay->setKeyboardCursorShape(shape);
 }
 
+void QTermWidget::setBoldIntense(bool value)
+{
+    if (!m_impl->m_terminalDisplay)
+        return;
+    m_impl->m_terminalDisplay->setBoldIntense(value);
+}
+
 QString QTermWidget::title() const
 {
     QString title = m_impl->m_session->userTitle();
